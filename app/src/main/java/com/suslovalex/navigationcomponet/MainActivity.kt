@@ -11,9 +11,6 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-//        @Suppress
         val binding = DataBindingUtil.setContentView<ActivityMainBinding>(this,R.layout.activity_main)
-//        val navController = this.findNavController(R.id.fragment)
-//        binding.root
     }
 }

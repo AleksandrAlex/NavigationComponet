@@ -19,8 +19,8 @@ class FirstScreen : Fragment() {
             container,
             false)
         binding.firstScreen.setOnClickListener {
-
-            Navigation.findNavController(it).navigate(R.id.action_firstScreen_to_secondScreen)
+            val action = FirstScreenDirections.actionFirstScreenToSecondScreen("HI!")
+            Navigation.findNavController(it).navigate(action)
         }
         return binding.root
 
